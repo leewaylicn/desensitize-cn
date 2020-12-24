@@ -11,9 +11,9 @@ by default, it would process `card`,`cnaddress`,`cnid`,`cnname`,`credential`,`em
 import desensitize
 de=desensitize.Desensitize()
 #de.remove_detector('email')
-text=u"13725557496 contact Joe Duffy at joe@example.com 370304197709200630 4401250222189922 李伟住在深圳市南山区滨海之窗"
+text=u"13725557496 contact Joe Duffy at joe@example.com 370304197709200630 4401250222189922 王猛住在上海市陆家嘴汤臣一品"
 de.clean(text)
-#['', 'a16a00b1f7d5e4e1b20a5b7517e17463', ' contact ', 'Joe', ' ', 'Duffy', ' at ', 'joe@example.com', ' ', '370***********0630', ' ', '************9922', ' ', '李*', '住在', '深圳市南山区**', '之窗']
+#['', 'a16a00b1f7d5e4e1b20a5b7517e17463', ' contact ', 'Joe', ' ', 'Duffy', ' at ', 'joe@example.com', ' ', '370***********0630', ' ', '************9922', ' ', '王*', '住在', '上海市***', '汤臣一品']
 ```
 
 # 2.Using it in csv process
